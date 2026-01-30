@@ -200,14 +200,14 @@ function randn() {
           className="border-4 rounded border-blue-400 p-2"
         />
 
-        <div className="flex justify-between">
-          <button onClick={handleGenerateCode} className="bg-blue-button px-3 py-1 rounded">
+        <div className="flex flex-col sm:flex-row justify-between gap-3 text-sm">
+          <button onClick={handleGenerateCode} className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black">
             Generate Code
           </button>
-          <button onClick={handleDownload} className="bg-blue-button px-3 py-1 rounded">
+          <button onClick={handleDownload} className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black">
             Download
           </button>
-          <button onClick={handleRun} className="bg-blue-button px-3 py-1 rounded">
+          <button onClick={handleRun} className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black">
             Submit & Run
           </button>
         </div>

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Simulation from "./pages/Simulation.jsx";
 import Simulation1 from "./pages/Simulation1.jsx";
 import Simulation2 from "./pages/Simulation2.jsx";

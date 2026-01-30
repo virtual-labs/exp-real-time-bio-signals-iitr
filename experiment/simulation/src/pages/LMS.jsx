@@ -242,20 +242,20 @@ module.exports = lmsDenoise;
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-between">
               <button
                 onClick={handleGenerateCode}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors w-full sm:w-auto"
+                className="bg-blue-500 hover:bg-blue-600 text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
               >
                 Generate Code
               </button>
               <button
                 onClick={handleDownloadCode}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors w-full sm:w-auto"
+                className="bg-blue-500 hover:bg-blue-600 text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
               >
                 Download
               </button>
               <button
                 onClick={handleRun}
                 disabled={loading}
-                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors w-full sm:w-auto disabled:opacity-50"
+                className="bg-blue-500 hover:bg-blue-600 text-black px-4 py-2 rounded transition-colors w-full sm:w-auto disabled:opacity-50 border-2 border-black"
               >
                 {loading ? "Processing..." : "Submit & Run"}
               </button>

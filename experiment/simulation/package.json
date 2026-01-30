@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "serve-build": "npx serve -s dist_build -l 5500",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve-spa": "npx serve -s dist_build -l 5500"
   },
   "dependencies": {
     "chart.js": "^4.5.1",
