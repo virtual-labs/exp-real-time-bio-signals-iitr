@@ -16,17 +16,17 @@ const Simulation = () => {
       <main className='flex-1 flex items-start justify-center w-full mt-2'>
         <div className='w-full max-w-3xl mx-auto flex gap-5 justify-center'>
           <Link to="/simulation/1">
-            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center min-w-[180px]'>
+            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center text-black border-2 border-black min-w-[180px]'>
               Stationary_LMS_RLS
             </button>
           </Link>
           <Link to="/simulation/2">
-            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center min-w-[180px]'>
+            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center text-black border-2 border-black min-w-[180px]'>
               AutoRegressive
             </button>
           </Link>
           <Link to="/simulation/3">
-            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center min-w-[180px]'>
+            <button className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-center text-black border-2 border-black min-w-[180px]'>
               Non Stationary_LMS_RLS
             </button>
           </Link>

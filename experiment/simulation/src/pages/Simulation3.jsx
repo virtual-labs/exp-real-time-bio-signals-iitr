@@ -9,13 +9,13 @@ const Simulation3 = () => {
       <h1 className='text-4xl font-bold mb-8'>Adaptive Signal Processing</h1>
       <div className='flex gap-5'>
         <button
-          className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-black font-semibold'
+          className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-black font-semibold border-2 border-black'
           onClick={() => navigate('/lmsst')}
         >
           Non-Stationary LMS
         </button>
         <button
-          className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-black font-semibold'
+          className='px-6 py-2 rounded-lg bg-blue-button hover:bg-blue-hover text-black font-semibold border-2 border-black'
           onClick={() => navigate('/rlsst')}
         >
           Non-Stationary RLS

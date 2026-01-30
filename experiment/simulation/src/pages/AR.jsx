@@ -326,13 +326,13 @@ end`;
             ></iframe>
             <div className='flex flex-col sm:flex-row justify-between gap-3 text-sm'>
               <button
-                className="bg-blue-button rounded-lg px-3 py-2 hover:bg-blue-hover mt-4 sm:mt-8 w-full sm:w-auto"
+                className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
                 onClick={handleDownload}
               >
                 Download
               </button>
               <button
-                className="bg-blue-button rounded-lg px-3 py-2 hover:bg-blue-hover mt-4 sm:mt-8 w-full sm:w-auto"
+                className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
                 onClick={handleRun}
               >
                 Submit & Run
@@ -438,7 +438,7 @@ end`;
           <div className="flex flex-col w-full">
             <button 
               onClick={handleGenerateCode} 
-              className="bg-blue-button rounded-lg px-3 py-2 hover:bg-blue-hover mt-10 w-full"
+              className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black mt-10"
             >
               Generate Code
             </button>

@@ -192,15 +192,15 @@ end`;
             title="Generated Code"
             className="border-4 p-2 rounded border-blue-hover w-full h-48 sm:h-56 md:h-64"
           />
-          <div className="flex justify-between gap-3 text-sm mt-4">
+          <div className="flex flex-col sm:flex-row justify-between gap-3 text-sm mt-4">
             <button 
-              className="bg-blue-button px-4 py-2 rounded hover:opacity-80 transition-opacity flex-1 sm:flex-none"
+              className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
               onClick={handleDownload}
             >
               Download
             </button>
             <button 
-              className="bg-blue-button px-4 py-2 rounded hover:opacity-80 transition-opacity flex-1 sm:flex-none"
+              className="bg-blue-button hover:bg-blue-hover text-black px-4 py-2 rounded transition-colors w-full sm:w-auto border-2 border-black"
               onClick={handleRun}
             >
               Submit & Run
