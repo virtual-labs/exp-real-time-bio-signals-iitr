@@ -1,39 +1,173 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+  "content": {
+    "title": "Adaptive Filtering, AR Models & Random Processes",
+    "section": "Pre-Test",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "What does RLS stand for in the context of adaptive filtering?",
+        "options": [
+          "a. Recursive Least Squares",
+          "b. Recurrent Linear System",
+          "c. Random Least Squares",
+          "d. Recursive Linear Smoothing"
+        ],
+        "answer": "a"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q2",
+        "question": "What is the primary goal of the LMS, RLS algorithms in adaptive filtering?",
+        "options": [
+          "a. To increase the complexity of the filter",
+          "b. To minimize the computational load",
+          "c. To minimize the error between the desired signal and the actual output",
+          "d. To maximize the filter's order"
+        ],
+        "answer": "c"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "id": "q3",
+        "question": "In which applications is the RLS algorithm particularly advantageous due to its fast convergence properties?",
+        "options": [
+          "a. Image processing",
+          "b. Echo cancellation and noise reduction",
+          "c. Data encryption",
+          "d. Video streaming"
+        ],
+        "answer": "b"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q4",
+        "question": "What does LMS stand for in the context of adaptive filtering?",
+        "options": [
+          "a. Least Mean Square Algorithm",
+          "b. Least Median Square Algorithm",
+          "c. Largest Mean Square Algorithm",
+          "d. None of the above"
+        ],
+        "answer": "a"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+      {
+        "id": "q5",
+        "question": "Which of the following statements is true about the computational complexity of the LMS algorithm compared to the RLS algorithm?",
+        "options": [
+          "a. LMS has lower computational complexity",
+          "b. LMS has higher computational complexity",
+          "c. LMS and RLS have similar computational complexity",
+          "d. LMS and RLS have no computational complexity"
+        ],
+        "answer": "a"
+      },
+      {
+        "id": "q6",
+        "question": "In autoregressive models ……………………………",
+        "options": [
+          "a. Current value of dependent variable is influenced by current values of independent variables",
+          "b. Current value of dependent variable is influenced by current and past values of independent variables",
+          "c. Current value of dependent variable is influenced by past values of both dependent and independent variables",
+          "d. None of the above"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q7",
+        "question": "A white noise process will have",
+        "options": [
+          "a. (ii) and (iv) only",
+          "b. (i) and (iii) only",
+          "c. (i), (ii) and (iii) only",
+          "d. (i), (ii), (iii) and (iv)"
+        ],
+        "answer": "a"
+      },
+      {
+        "id": "q8",
+        "question": "The white noise spectral density………………………",
+        "options": [
+          "a. changes with frequency",
+          "b. remain constant",
+          "c. changes with BW",
+          "d. changes with amplitude"
+        ],
+        "answer": "b"
+      },
+      {
+        "id": "q9",
+        "question": "What are the properties of autoregressive Models?",
+        "options": [
+          "a. Stationarity",
+          "b. Invertibility",
+          "c. Ergodicity",
+          "d. All of above"
+        ],
+        "answer": "d"
+      },
+      {
+        "id": "q10",
+        "question": "What is the key feature of an order(p) of AR model",
+        "options": [
+          "a. The current value depends on future values",
+          "b. The current value depends only on a random noise term",
+          "c. The current value depends on past p values",
+          "d. The current value depends on the mean of the process"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q11",
+        "question": "What is the standard form of WSSRP?",
+        "options": [
+          "a. Wide Sense Stationary Random Points",
+          "b. Wide Sense Stationary Random Particles",
+          "c. Wide Sense Stationary Random Process",
+          "d. None of the above"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q12",
+        "question": "Gaussian process is a",
+        "options": [
+          "a. Wide sense stationary process",
+          "b. Strict sense stationary process",
+          "c. All of the mentioned",
+          "d. None of the mentioned"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q13",
+        "question": "Random variables give relationship between _____",
+        "options": [
+          "a. Two random events",
+          "b. Probability of occurrence of two random events",
+          "c. Random event and a real number",
+          "d. Random event and its probability of occurrence"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q14",
+        "question": "A stationary stochastic process has",
+        "options": [
+          "a. Finite energy signal",
+          "b. Infinite zero signal",
+          "c. Zero energy signal",
+          "d. None of the mentioned"
+        ],
+        "answer": "b"
+      },
+      {
+        "id": "q15",
+        "question": "Which of the following conditions are necessary for a series to be classifiable as a weakly stationary process?",
+        "options": [
+          "a. (ii) and (iv) only",
+          "b. (i) and (iii) only",
+          "c. (i), (ii) and (iii) only",
+          "d. (i), (ii), (iii) and (iv)"
+        ],
+        "answer": "c"
+      }
+    ]
+  }
 }
