@@ -1,39 +1,168 @@
 {
-  "version": 2.0,
-  "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+  "content": {
+    "title": "LMS, RLS & Autoregressive Process",
+    "section": "Post-Test",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Which parameter in the RLS algorithm controls the weight given to past errors?",
+        "options": [
+          "a. Filter length",
+          "b. Step size",
+          "c. Forgetting factor",
+          "d. Gain vector"
+        ],
+        "answer": "c"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q2",
+        "question": "For which value of the forgetting factor 𝜆 does the RLS algorithm ensure that the desired signal closely matches the output signal?",
+        "options": [
+          "a. 0",
+          "b. 0.5",
+          "c. Close to 1",
+          "d. Greater than 1"
+        ],
+        "answer": "c"
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+      {
+        "id": "q3",
+        "question": "Within which range should the forgetting factor 𝜆 typically fall to ensure effective performance of the RLS algorithm?",
+        "options": [
+          "a. 𝜆 < 0",
+          "b. 0 < 𝜆 < 0.5",
+          "c. 0 < 𝜆 ≤ 1",
+          "d. 𝜆 > 1"
+        ],
+        "answer": "c"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      {
+        "id": "q4",
+        "question": "Within which range should the step size parameter typically fall in the LMS algorithm to ensure stable convergence?",
+        "options": [
+          "a. 0 < 𝜇 < 1",
+          "b. 1 < 𝜇 < ∞",
+          "c. 0 < 𝜇 < ∞",
+          "d. 𝜇 > 1"
+        ],
+        "answer": "a"
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
-  ]
+      {
+        "id": "q5",
+        "question": "Which of the following best describes the stability of the LMS algorithm?",
+        "options": [
+          "a. Unstable for all values of step size",
+          "b. Stable for all values of step size",
+          "c. Stable only for small values of step size",
+          "d. Stable only for large values of step size"
+        ],
+        "answer": "c"
+      },
+      {
+        "id": "q6",
+        "question": "What are the assumptions of autoregressive models?",
+        "options": [
+          "a. The data must be stationary",
+          "b. The relationship between variables and their lagged values must be linear",
+          "c. The error term should be white noise",
+          "d. All of above"
+        ],
+        "answer": "d"
+      },
+      {
+        "id": "q7",
+        "question": "From the figures given below, choose the correct option for Autoregressive process?",
+        "options": [
+          "a. Order of fig-1 > order of fig-2",
+          "b. Order of fig-1 < order of fig-2",
+          "c. Order of fig-1 = order of fig-2",
+          "d. None of the above"
+        ],
+        "answer": "b"
+      },
+      {
+        "id": "q8",
+        "question": "What is the order of the given Autoregressive process?",
+        "options": [
+          "a. 3",
+          "b. 2",
+          "c. 1",
+          "d. 4"
+        ],
+        "answer": "b"
+      },
+      {
+        "id": "q9",
+        "question": "In the plot obtained from the simulation of Autoregressive process what does x-axis represent?",
+        "options": [
+          "a. Order of the AR process",
+          "b. AR coefficients",
+          "c. Standard deviation of the noise",
+          "d. Number of time steps"
+        ],
+        "answer": "d"
+      },
+      {
+        "id": "q10",
+        "question": "Which of the following algorithm are good for tracking the nonstationary input?",
+        "options": [
+          "a. LMS algorithm",
+          "b. RLS algorithm",
+          "c. Both LMS and RLS",
+          "d. None of these"
+        ],
+        "answer": "d"
+      },
+      {
+        "id": "q11",
+        "question": "After performing the experiments, by comparing the result of LMS and RLS, which one gives better result in nonstationary environment?",
+        "options": [
+          "a. RLS",
+          "b. LMS"
+        ],
+        "answer": "a"
+      },
+      {
+        "id": "q12",
+        "question": "From the experiment result, if the norm of weight is decreasing, what does it signify?",
+        "options": [
+          "a. Algorithm is trying to reach its optimal weight vector or track the input value",
+          "b. It will not follow the track of input signal"
+        ],
+        "answer": "a"
+      },
+      {
+        "id": "q13",
+        "question": "What will be effect of increasing the order of filter in RLS and LMS in nonstationary environment?",
+        "options": [
+          "a. It will improve the performance",
+          "b. It will deteriorate the performance"
+        ],
+        "answer": "a"
+      },
+      {
+  "id": "q14",
+  "question": "Which algorithm generally has faster convergence in adaptive filtering?",
+  "options": [
+    "a. LMS algorithm",
+    "b. RLS algorithm",
+    "c. Both converge at the same rate",
+    "d. Neither converges"
+  ],
+  "answer": "b"
+},
+{
+  "id": "q15",
+  "question": "Which parameter primarily controls the convergence speed of the LMS algorithm?",
+  "options": [
+    "a. Filter order",
+    "b. Forgetting factor",
+    "c. Step size",
+    "d. Gain vector"
+  ],
+  "answer": "c"
+}
+      
+    ]
+  }
 }
