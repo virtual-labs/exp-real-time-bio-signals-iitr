@@ -1,6 +1,5 @@
 ### a. Least Mean Square (LMS) and Recursive Least Squares (RLS) Adaptive Filters
 
----
 
 #### **Least Mean Square (LMS) Adaptive Filter Concepts**
 
@@ -13,7 +12,6 @@ Least Mean Squares (LMS) algorithms are a class of adaptive filters used to mimi
   <figcaption><strong>Fig. 1 Block Diagram of a Typical Adaptive Filter</strong></figcaption><br>
 </center>
 
----
 
 #### **Signal Definitions**
 
@@ -22,14 +20,12 @@ Least Mean Squares (LMS) algorithms are a class of adaptive filters used to mimi
 - **d(n)**: Desired (reference) signal  
 - **e(n)**: Error signal representing the difference between d(n) and y(n)  
 
----
 
 The linear filter may be a **Finite Impulse Response (FIR)** or **Infinite Impulse Response (IIR)** filter.  
 An adaptive algorithm iteratively adjusts the coefficients of the linear filter to minimize the power of the error signal **e(n)**.
 
 The LMS algorithm is one of several adaptive algorithms used to adjust FIR filter coefficients. Another important adaptive algorithm is the **Recursive Least Squares (RLS)** algorithm.
 
----
 
 ### **LMS Algorithm Steps**
 
@@ -44,9 +40,9 @@ The LMS algorithm updates the coefficients of an adaptive FIR filter through the
 
 #### **2. Calculate the Error Signal**
 
-$$
+
 e(n) = d(n) - y(n)
-$$
+
 
 #### **3. Update the Filter Coefficients**
 
@@ -61,7 +57,6 @@ Where:
 - **w(n)**: Filter coefficient vector  
 - **u(n)**: Filter input vector  
 
----
 
 ### **Advantages of LMS**
 
@@ -75,7 +70,6 @@ Where:
 - Low convergence rate  
 - Poor performance at low signal-to-noise ratio (SNR)  
 
----
 
 ### **Recursive Least Squares (RLS)**
 
@@ -89,7 +83,6 @@ RLS is widely used in applications such as:
 
 The goal of adaptive filtering is to minimize the difference between the desired signal and the actual output. The RLS algorithm achieves this by recursively minimizing a **weighted least squares cost function** using both past and present error samples.
 
----
 
 ### **Mathematical Foundation of RLS**
 
@@ -111,15 +104,13 @@ Here:
 
 - **e(i)** is the difference between desired response **d(i)** and filter output **y(i)**  
 - The FIR filter tap weights remain fixed during the observation interval  
-- $1 \le i \le n$  
+- 1 \le i \le n
 
 The weighting factor **β(n, i)** satisfies:
 
-$$
-0 < \beta(n, i) \le 1
-$$
 
----
+0 < \beta(n, i) \le 1
+
 
 ### **Forgetting Factor**
 
@@ -127,17 +118,16 @@ The weighting factor ensures older data is gradually “forgotten” to allow tr
 
 A commonly used weighting is the **exponential forgetting factor**:
 
-$$
+
 \beta(n, i) = \lambda^{(n - i)}, \quad i = 1, 2, \ldots, n
-$$
+
 
 Where:
 
 - **λ** is close to but less than 1  
 - λ = 1 → Infinite memory (ordinary least squares)  
-- $\frac{1}{1 - \lambda}$ approximately represents algorithm memory  
+- \frac{1}{1 - \lambda} approximately represents algorithm memory  
 
----
 
 ### **RLS Initialization**
 
@@ -153,18 +143,16 @@ Where **δ** is the regularization parameter:
 - Small δ → High SNR  
 - Large δ → Low SNR  
 
----
 
 ### **Recursive Update Equations**
 
-For each time instant $n = 1, 2, \ldots$, the following computations are performed:
+For each time instant n = 1, 2, \ldots, the following computations are performed:
 
 <center>  
   <img style="mix-blend-mode: darken;" src="images/r5.png" alt="RLS Recursive Equations">
   <figcaption><strong>Fig. 7 RLS Recursive Update Equations</strong></figcaption><br>
 </center>
 
----
 
 ### **Signal Flow Graph**
 
@@ -173,7 +161,6 @@ For each time instant $n = 1, 2, \ldots$, the following computations are perform
   <figcaption><strong>Fig. 8 RLS Signal Flow Graph</strong></figcaption><br>
 </center>
 
----
 
 ### **Advantages of RLS**
 
@@ -181,14 +168,12 @@ For each time instant $n = 1, 2, \ldots$, the following computations are perform
 - High accuracy in coefficient estimation  
 - Excellent tracking of time-varying systems  
 
----
 
 ### **Limitations of RLS**
 
 - High computational complexity  
 - Large memory requirement due to inverse correlation matrix storage  
 
----
 
 ### **Comparison of LMS and RLS Adaptive Filters**
 
@@ -207,7 +192,6 @@ LMS uses a gradient-based approach with a step size μ:
 
 RLS minimizes a global least-squares cost function and adapts much faster.
 
----
 
 ### **Summary**
 
@@ -220,7 +204,6 @@ RLS minimizes a global least-squares cost function and adapts much faster.
 
 A statistical model is said to be **autoregressive** if it predicts future values based on past values. For example, an autoregressive model may be used to predict a stock’s future price based on its historical performance.
 
----
 
 ### **Basic Concept of Autoregressive Models**
 
@@ -234,7 +217,6 @@ Multiple regression models forecast a variable using a linear combination of pre
 
 There are various methods to estimate the coefficients of AR models, such as the **least squares method**.
 
----
 
 ### **Block Diagram of an Autoregressive Model**
 
@@ -243,7 +225,6 @@ There are various methods to estimate the coefficients of AR models, such as the
   <figcaption><strong>Fig. 1 Block Diagram of an Autoregressive Model</strong></figcaption><br>
 </center>
 
----
 
 ### **Second Order Autoregressive Process**
 
@@ -254,9 +235,9 @@ The time-domain behavior of the AR(2) process is governed by the following **sec
 
 <center>  
 
-$$
+
 u(n) + a_1 u(n-1) + a_2 u(n-2) = v(n)
-$$
+
 
 </center>
 
@@ -266,9 +247,8 @@ Where:
 - **a₁, a₂** are autoregressive coefficients  
 - **v(n)** is a white noise sequence with  
   - Zero mean  
-  - Variance $\sigma^2$  
+  - Variance \sigma^2
 
----
 
 ### **Key Characteristics of AR Models**
 
@@ -277,7 +257,6 @@ Where:
 - Widely used in signal processing, economics, and forecasting  
 - Model order determines memory depth  
 
----
 
 ### **Summary**
 
@@ -286,4 +265,3 @@ Where:
 - AR(2) models are governed by second-order difference equations  
 - White noise acts as the driving input to the system  
 
----
