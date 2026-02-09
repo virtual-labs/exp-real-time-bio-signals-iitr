@@ -1,1 +1,1 @@
-## Comparative Analysis of LMS and RLS Adaptive Filtering Algorithms
+## Adaptive Filtering of Bio-signals Using LMS and RLS Algorithms
