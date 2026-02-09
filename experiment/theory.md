@@ -104,12 +104,12 @@ Here:
 
 - **e(i)** is the difference between desired response **d(i)** and filter output **y(i)**  
 - The FIR filter tap weights remain fixed during the observation interval  
-- 1 \le i \le n
+- 1≤i≤n
 
 The weighting factor **β(n, i)** satisfies:
 
 
-0 < \beta(n, i) \le 1
+0<β(n,i)≤1
 
 
 ### **Forgetting Factor**
@@ -119,14 +119,13 @@ The weighting factor ensures older data is gradually “forgotten” to allow tr
 A commonly used weighting is the **exponential forgetting factor**:
 
 
-\beta(n, i) = \lambda^{(n - i)}, \quad i = 1, 2, \ldots, n
-
+β(n,i)=λ(n−i),i=1,2,…,n
 
 Where:
 
 - **λ** is close to but less than 1  
-- λ = 1 → Infinite memory (ordinary least squares)  
-- \frac{1}{1 - \lambda} approximately represents algorithm memory  
+- λ=1 → infinite memory (ordinary least squares)  
+- 1/1−λ → approximately represents the algorithm memory
 
 
 ### **RLS Initialization**
@@ -146,7 +145,7 @@ Where **δ** is the regularization parameter:
 
 ### **Recursive Update Equations**
 
-For each time instant n = 1, 2, \ldots, the following computations are performed:
+For each time instant n=1,2,… the following computations are performed:
 
 <center>  
   <img style="mix-blend-mode: darken;" src="images/r5.png" alt="RLS Recursive Equations">
@@ -236,7 +235,7 @@ The time-domain behavior of the AR(2) process is governed by the following **sec
 <center>  
 
 
-u(n) + a_1 u(n-1) + a_2 u(n-2) = v(n)
+u(n) + a₁u(n-1) + a₂u(n-2) = v(n)
 
 
 </center>
@@ -247,7 +246,7 @@ Where:
 - **a₁, a₂** are autoregressive coefficients  
 - **v(n)** is a white noise sequence with  
   - Zero mean  
-  - Variance \sigma^2
+  - Variance σ^2
 
 
 ### **Key Characteristics of AR Models**
@@ -265,3 +264,86 @@ Where:
 - AR(2) models are governed by second-order difference equations  
 - White noise acts as the driving input to the system  
 
+
+### c. Stochastic Processes
+
+### Stochastic Process Definition
+
+- A **stochastic process** is a mathematical model that describes a sequence of random variables. The individual random variables in the sequence are usually called *events*.
+- A stochastic or random process can be defined as a collection of random variables that is indexed by some mathematical set, meaning that each random variable of the stochastic process is uniquely associated with an element in the set.
+- A stochastic process can be used to model the evolution of a physical system over time, or the evolution of a random variable over time.
+
+---
+
+#### Types of Stochastic Processes
+
+There are four types of stochastic processes:
+
+1. **Discrete-time stochastic processes:**  
+   These processes are characterized by a sequence of random variables, each of which takes on a finite set of values.
+
+2. **Continuous-time stochastic processes:**  
+   These processes are characterized by a sequence of random variables, each of which takes on a continuous range of values.
+
+3. **Stationary stochastic processes:**  
+   These processes are characterized by the fact that the statistical properties of the random variables do not change over time.
+
+4. **Non-stationary stochastic processes:**  
+   These processes are characterized by the fact that the statistical properties of the random variables change over time.
+
+---
+
+#### Stationary Random Processes
+
+A random process at a given time is a **random variable**, and in general, the characteristics of this random variable depend on the time at which the random process is sampled.
+
+A random process **X(t)** is said to be **stationary** or **strict-sense stationary** if the **probability density function (pdf)** of any set of samples does not vary with time. In other words, the joint pdf or cumulative distribution function (cdf) of  
+
+X(t₁), … , X(tₖ)  
+
+is the same as the joint pdf or cdf of  
+
+X(t₁ + τ), … , X(tₖ + τ)  
+
+for any time shift τ and for all choices of t₁, … , tₖ.
+
+In principle, it is difficult to determine if a process is stationary. Moreover, stationary processes cannot occur physically because real signals begin and end at finite times. Due to practical considerations, the observation interval is limited, and usually only first- and second-order statistics are used instead of joint pdfs and cdfs.
+
+Since it is difficult to determine the complete distribution of a random process, analysis often focuses on partial yet useful descriptions such as the **mean**, **autocorrelation**, and **autocovariance** functions.
+
+---
+
+#### Wide-Sense Stationary (WSS) Processes
+
+A random process **X(t)** is said to be **wide-sense stationary (WSS)** if:
+
+1. The mean is constant:  
+   **E[X(t)] = μ**, independent of time
+
+2. The autocorrelation function depends only on the time difference:  
+   **τ = t₂ − t₁**, and not on t₁ and t₂ individually
+
+3. **E[X²(t)] < ∞** (finite power condition)
+
+That is,
+
+Rₓ(t₁, t₂) = Rₓ(t₂ − t₁)
+
+All strict-sense stationary processes are wide-sense stationary, but the converse is not always true. However, if a **Gaussian random process** is wide-sense stationary, then it is also stationary in the strict sense.
+
+---
+
+#### Non-Stationary Processes
+
+In a covariance stationary stochastic process, the **mean**, **variance**, and **autocovariance** are assumed to be independent of time. In a **non-stationary process**, one or more of these assumptions does not hold.
+
+A non-stationary process is characterized by a joint pdf or cdf that depends on the specific time instants t₁, … , tₖ. For a stationary random process, the mean and variance are constants and do not vary with time.
+
+<center>  
+<img style="mix-blend-mode: darken;" src="images/randomprocesses.png" alt="Random Processes">
+<figcaption><strong>Fig. 1 Classification of Random Processes</strong></figcaption><br>
+</center>
+
+Data points are often non-stationary and may have means, variances, or covariances that change over time. Non-stationary behaviors can include **trends**, **cycles**, **random walks**, or combinations of these. Non-stationary data are generally unpredictable and difficult to model or forecast.
+
+---
