@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does RLS stand for in the context of adaptive filtering?",
+    "answers": {
+      "a": "Recursive Least Squares",
+      "b": "Recurrent Linear System",
+      "c": "Random Least Squares",
+      "d": "Recursive Linear Smoothing"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "What is the primary goal of the LMS, RLS algorithms in adaptive filtering?",
+    "answers": {
+      "a": "To increase the complexity of the filter",
+      "b": "To minimize the computational load",
+      "c": "To minimize the error between the desired signal and the actual output",
+      "d": "To maximize the filter's order"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "In which applications is the RLS algorithm particularly advantageous due to its fast convergence properties?",
+    "answers": {
+      "a": "Image processing",
+      "b": "Echo cancellation and noise reduction",
+      "c": "Data encryption",
+      "d": "Video streaming"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What does LMS stand for in the context of adaptive filtering?",
+    "answers": {
+      "a": "Least Mean Square Algorithm",
+      "b": "Least Median Square Algorithm",
+      "c": "Largest Mean Square Algorithm",
+      "d": "None of the above"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "Which of the following statements is true about the computational complexity of the LMS algorithm compared to the RLS algorithm?",
+    "answers": {
+      "a": "LMS has lower computational complexity",
+      "b": "LMS has higher computational complexity",
+      "c": "LMS and RLS have similar computational complexity",
+      "d": "LMS and RLS have no computational complexity"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "In autoregressive models ……………………………",
+    "answers": {
+      "a": "Current value of dependent variable is influenced by current values of independent variables",
+      "b": "Current value of dependent variable is influenced by current and past values of independent variables",
+      "c": "Current value of dependent variable is influenced by past values of both dependent and independent variables",
+      "d": "None of the above"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "A white noise process will have",
+    "answers": {
+      "a": "(ii) and (iv) only",
+      "b": "(i) and (iii) only",
+      "c": "(i), (ii) and (iii) only",
+      "d": "(i), (ii), (iii) and (iv)"
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "question": "The white noise spectral density………………………",
+    "answers": {
+      "a": "Changes with frequency",
+      "b": "Remain constant",
+      "c": "Changes with BW",
+      "d": "Changes with amplitude"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "What are the properties of autoregressive Models?",
+    "answers": {
+      "a": "Stationarity",
+      "b": "Invertibility",
+      "c": "Ergodicity",
+      "d": "All of the above"
+    },
+    "correctAnswer": "d"
+  },
+  {
+    "question": "What is the key feature of an order (p) of AR model?",
+    "answers": {
+      "a": "The current value depends on future values",
+      "b": "The current value depends only on a random noise term",
+      "c": "The current value depends on past p values",
+      "d": "The current value depends on the mean of the process"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "What is the standard form of WSSRP?",
+    "answers": {
+      "a": "Wide Sense Stationary Random Points",
+      "b": "Wide Sense Stationary Random Particles",
+      "c": "Wide Sense Stationary Random Process",
+      "d": "None of the above"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Gaussian process is a",
+    "answers": {
+      "a": "Wide sense stationary process",
+      "b": "Strict sense stationary process",
+      "c": "All of the mentioned",
+      "d": "None of the mentioned"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "Random variables give relationship between _____",
+    "answers": {
+      "a": "Two random events",
+      "b": "Probability of occurrence of two random events",
+      "c": "Random event and a real number",
+      "d": "Random event and its probability of occurrence"
+    },
+    "correctAnswer": "c"
+  },
+  {
+    "question": "A stationary stochastic process has",
+    "answers": {
+      "a": "Finite energy signal",
+      "b": "Infinite zero signal",
+      "c": "Zero energy signal",
+      "d": "None of the mentioned"
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "question": "Which of the following conditions are necessary for a series to be classifiable as a weakly stationary process?",
+    "answers": {
+      "a": "(ii) and (iv) only",
+      "b": "(i) and (iii) only",
+      "c": "(i), (ii) and (iii) only",
+      "d": "(i), (ii), (iii) and (iv)"
+    },
+    "correctAnswer": "c"
+  }
+]
